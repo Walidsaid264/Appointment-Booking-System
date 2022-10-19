@@ -76,7 +76,7 @@ if(isset($_POST['logout'])){
 		session_destroy();
 		header( "Refresh:1; url=alogin.php"); 
 	}
-$con = mysqli_connect('localhost','root','','wt_database');
+$con = mysqli_connect('localhost','root','','wt_database','3307');
 if (!$con)
 {
     die('Could not connect: ' . mysqli_error($con));
